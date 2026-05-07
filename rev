@@ -1,0 +1,19 @@
+# reverse_string.py
+
+def reverse_string(s: str) -> str:
+    """
+    Возвращает строку с обратным порядком символов.
+
+    Args:
+        s (str): Входная строка
+
+    Returns:
+        str: Перевёрнутая строка
+
+    Raises:
+        TypeError: Если входной аргумент не является строкой
+    """
+    if not isinstance(s, str):
+        raise TypeError("Input must be a string")
+    
+    return s[::-1]
